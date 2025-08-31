@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شروحات وشهادات | أحمد سامي</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-dark-bg text-light-text">
+
+    <!-- SDK Facebook للـ Javascript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v19.0" nonce="XYZ"></script>
+
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300">
+        <!-- ... انسخ الهيدر بالكامل من ملف index.html وضعه هنا ... -->
+        <div class="container"><div class="flex items-center justify-between py-4"><a href="index.html" class="flex items-center gap-3"><img src="./assets/images/icon.png" alt="شعار أحمد سامي" class="w-10 h-10 rounded-xl"/><h1 class="text-xl font-bold text-slate-900">أحمد سامي</h1></a><nav class="hidden md:flex items-center gap-6"><a href="index.html" class="nav-link" data-lang-key="nav_home">الرئيسية</a><a href="about.html" class="nav-link" data-lang-key="nav_about">عن المدرس</a><a href="courses.html" class="nav-link" data-lang-key="nav_courses">الدورات</a><a href="videos.html" class="nav-link" data-lang-key="nav_videos">الفيديوهات</a><a href="contact.html" class="nav-link" data-lang-key="nav_contact">تواصل</a></nav><div class="flex items-center gap-3"><button id="lang-switch" class="px-4 py-2 text-sm font-semibold bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200"></button><button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-800 hover:bg-slate-200" aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div></div></div><div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-slate-200"><div class="container py-4 space-y-2"><a href="index.html" class="mobile-nav-link" data-lang-key="nav_home"></a><a href="about.html" class="mobile-nav-link" data-lang-key="nav_about"></a><a href="courses.html" class="mobile-nav-link" data-lang-key="nav_courses"></a><a href="videos.html" class="mobile-nav-link" data-lang-key="nav_videos"></a><a href="contact.html" class="mobile-nav-link" data-lang-key="nav_contact"></a></div></div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <h1 class="section-title">مقتطفات من الشرح وآراء الطلاب</h1>
+                <p class="section-subtitle">شاهد بنفسك أسلوب الشرح واستمع لشهادات من طلابنا السابقين.</p>
+                
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <!-- Video 1 -->
+                    <div class="card overflow-hidden">
+                        <div class="fb-video" data-href="https://www.facebook.com/reel/1098027619103150" data-width="auto" data-show-text="false"></div>
+                        <div class="p-4"><p class="text-subtle-text text-sm">شرح مبسّط وخطوات واضحة، شكراً مستر أحمد!</p></div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="card overflow-hidden">
+                        <div class="fb-video" data-href="https://www.facebook.com/watch/?v=16oQGqHA2A" data-width="auto" data-show-text="false"></div>
+                         <div class="p-4"><p class="text-subtle-text text-sm">أفضل مراجعة قبل الامتحان، ركز على أهم الأفكار.</p></div>
+                    </div>
+                    
+                    <!-- Video 3 -->
+                    <div class="card overflow-hidden">
+                        <div class="fb-video" data-href="https://www.facebook.com/watch/?v=1TqAVbNZL3" data-width="auto" data-show-text="false"></div>
+                         <div class="p-4"><p class="text-subtle-text text-sm">طريقة الشرح خلت المسائل الصعبة سهلة جداً.</p></div>
+                    </div>
+
+                    <!-- أضف المزيد من الفيديوهات هنا بنفس الطريقة -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-8">
+        <!-- ... انسخ الفوتر بالكامل من ملف index.html وضعه هنا ... -->
+        <div class="container text-center text-subtle-text"><p>&copy; <span id="year"></span> أحمد سامي. جميع الحقوق محفوظة.</p><p class="text-sm">تصميم وتطوير بواسطة يحيى رضا</p></div>
+    </footer>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
