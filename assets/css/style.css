@@ -1,0 +1,32 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary-color: #4f46e5;  /* Indigo-600 */
+        --secondary-color: #0ea5e9; /* Sky-500 */
+        --dark-bg: #0f172a;       /* Slate-900 */
+        --light-text: #f1f5f9;   /* Slate-100 */
+        --subtle-text: #94a3b8;   /* Slate-400 */
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cairo', sans-serif; background-color: var(--dark-bg); color: var(--light-text); @apply antialiased; }
+}
+
+@layer components {
+    .container { @apply mx-auto px-4 sm:px-6 lg:px-8; }
+    .section-padding { @apply py-16 md:py-20 lg:py-24; }
+    .section-title { @apply text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-center; }
+    .section-subtitle { @apply mt-4 max-w-2xl text-lg text-slate-300 mx-auto text-center; }
+    .btn { @apply inline-block px-6 py-3 rounded-lg font-bold text-center transition-transform duration-200 transform hover:scale-105 focus:outline-none focus:ring-4; }
+    .btn-primary { @apply bg-primary-color text-white shadow-lg focus:ring-primary-color/50; }
+    .btn-secondary { @apply bg-transparent border-2 border-secondary-color text-secondary-color hover:bg-secondary-color hover:text-white; }
+    .card { @apply bg-slate-800/60 backdrop-blur border border-slate-700 rounded-2xl p-6 transition-all duration-300 hover:border-primary-color hover:shadow-2xl hover:shadow-primary-color/10; }
+    .nav-link { @apply text-slate-800 hover:text-primary-color font-semibold transition-colors duration-200; }
+    .nav-link.active { @apply text-primary-color; }
+    .mobile-nav-link { @apply block w-full text-left py-2 px-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-200; }
+}
+header.scrolled { @apply shadow-lg bg-white/80 backdrop-blur-lg; }
