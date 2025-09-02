@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات | أحمد سامي</title>
+    <meta name="description" content="اكتشف الدورات المتكاملة في الرياضيات لطلاب الثانوية العامة مع الأستاذ أحمد سامي.">
+    <link rel="icon" type="image/png" href="./assets/image/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-dark-bg text-light-text">
+
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="./assets/image/icon.png" alt="شعار أحمد سامي" class="w-10 h-10 rounded-xl"/>
+                    <h1 class="text-xl font-bold" data-lang-key="site_name">أحمد سامي</h1>
+                </a>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="index.html" class="nav-link" data-lang-key="nav_home">الرئيسية</a>
+                    <a href="about.html" class="nav-link" data-lang-key="nav_about">عن المدرس</a>
+                    <a href="videos.html" class="nav-link" data-lang-key="nav_videos">الفيديوهات</a>
+                    <a href="courses.html" class="nav-link" data-lang-key="nav_courses">الدورات</a>
+                    <a href="contact.html" class="nav-link" data-lang-key="nav_contact">التواصل</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <button id="lang-switch" class="px-4 py-2 text-sm font-semibold bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 transition-colors">EN</button>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-200" aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95">
+            <div class="container py-4 space-y-2">
+                <a href="index.html" class="mobile-nav-link" data-lang-key="nav_home">الرئيسية</a>
+                <a href="about.html" class="mobile-nav-link" data-lang-key="nav_about">عن المدرس</a>
+                <a href="videos.html" class="mobile-nav-link" data-lang-key="nav_videos">الفيديوهات</a>
+                <a href="courses.html" class="mobile-nav-link" data-lang-key="nav_courses">الدورات</a>
+                <a href="contact.html" class="mobile-nav-link" data-lang-key="nav_contact">التواصل</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <h1 class="section-title" data-lang-key="courses_title">دوراتنا في الرياضيات</h1>
+                <p class="section-subtitle" data-lang-key="courses_subtitle">اختر الدورة التي تناسب احتياجاتك وابدأ رحلة التفوق في الرياضيات.</p>
+                
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-secondary-color" data-lang-key="course_1_title">الجبر والهندسة الفراغية</h3>
+                        <p class="mt-2 text-subtle-text" data-lang-key="course_1_desc">شرح شامل لجميع فصول المنهج مع حل تمارين متنوعة وأسئلة امتحانات سابقة لضمان فهم عميق وتطبيق سليم.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-secondary-color" data-lang-key="course_2_title">التفاضل والتكامل</h3>
+                        <p class="mt-2 text-subtle-text" data-lang-key="course_2_desc">تبسيط مفاهيم التفاضل والتكامل وقواعد الاشتقاق والتطبيقات العملية عليها، مع التركيز على المسائل الصعبة.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-secondary-color" data-lang-key="course_3_title">المراجعة النهائية وليلة الامتحان</h3>
+                        <p class="mt-2 text-subtle-text" data-lang-key="course_3_desc">دورة مكثفة تغطي أهم الأفكار والنقاط الرئيسية في المنهج بالكامل، مع حل نماذج امتحانات متوقعة.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container border-t border-slate-800 py-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-start">
+                <div>
+                    <h3 class="text-lg font-bold" data-lang-key="site_name">أحمد سامي</h3>
+                    <p class="text-subtle-text mt-2" data-lang-key="footer_desc">مدرس رياضيات متخصص، ملتزم بتمكين الطلاب لتحقيق أعلى الدرجات.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold" data-lang-key="quick_links">روابط سريعة</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="about.html" class="text-subtle-text hover:text-primary-color" data-lang-key="nav_about">عن المدرس</a></li>
+                        <li><a href="courses.html" class="text-subtle-text hover:text-primary-color" data-lang-key="nav_courses">الدورات</a></li>
+                        <li><a href="videos.html" class="text-subtle-text hover:text-primary-color" data-lang-key="nav_videos">الفيديوهات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold" data-lang-key="nav_contact">تواصل</h3>
+                     <ul class="mt-2 space-y-1">
+                        <li><a href="contact.html" class="text-subtle-text hover:text-primary-color" data-lang-key="contact_us_link">تواصل معنا الآن</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-subtle-text">
+                <p>&copy; <span id="year"></span> <span data-lang-key="site_name">أحمد سامي</span>. <span data-lang-key="rights_reserved">جميع الحقوق محفوظة.</span></p>
+                <p class="text-sm">تصميم وتطوير بواسطة يحيى رضا</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeComponents();
+        });
+
+        const state = { lang: localStorage.getItem('lang') || 'ar' };
+        
+        const translations = {
+            'site_name': { ar: 'أحمد سامي', en: 'Ahmed Samy' }, 'nav_home': { ar: 'الرئيسية', en: 'Home' }, 'nav_about': { ar: 'عن المدرس', en: 'About' }, 'nav_videos': { ar: 'الفيديوهات', en: 'Videos' }, 'nav_courses': { ar: 'الدورات', en: 'Courses' }, 'nav_contact': { ar: 'التواصل', en: 'Contact' },
+            'hero_title': { ar: 'اجعل الرياضيات مادتك المفضلة<br><span class="text-primary-color">مع خبرة تتجاوز 15 عاماً</span>', en: 'Make Math Your Favorite Subject<br><span class="text-primary-color">With Over 15 Years of Experience</span>' },
+            'hero_subtitle': { ar: 'شرح تفصيلي ومبسط، أمثلة عملية، ومتابعة دورية لضمان استيعابك الكامل لمنهج الثانوية العامة.', en: 'Detailed explanations, practical examples, and regular follow-up to ensure full understanding of the high school curriculum.' },
+            'hero_btn_about': { ar: 'اعرف المزيد عني', en: 'About Me' }, 'hero_btn_courses': { ar: 'استكشف الدورات', en: 'Explore Courses' },
+            'why_us_title': { ar: 'لماذا تختار أ. أحمد سامي؟', en: 'Why Choose Mr. Ahmed Samy?' },
+            'why_us_subtitle': { ar: 'نقدم لك أكثر من مجرد دروس، بل تجربة تعليمية متكاملة تضمن لك التفوق.', en: 'We offer more than lessons, but an integrated educational experience that guarantees your excellence.' },
+            'feature_1_title': { ar: 'شرح مبسط وعميق', en: 'Simple and Deep Explanation' },
+            'feature_1_desc': { ar: 'تحويل أعقد المسائل إلى خطوات بسيطة ومنطقية يمكنك فهمها وتطبيقها بسهولة.', en: 'Turning complex problems into simple, logical steps you can easily understand and apply.' },
+            'feature_2_title': { ar: 'متابعة فردية', en: 'Individual Follow-up' },
+            'feature_2_desc': { ar: 'اهتمام شخصي بكل طالب، مع تقييمات مستمرة وواجبات لضمان عدم وجود أي ثغرات.', en: 'Personal attention to each student, with continuous assessments and assignments to ensure no gaps.' },
+            'feature_3_title': { ar: 'محتوى عصري', en: 'Modern Content' },
+            'feature_3_desc': { ar: 'استخدام أحدث الوسائل التكنولوجية لجعل عملية التعلم ممتعة وفعالة.', en: 'Using the latest technology to make the learning process fun and effective.' },
+            'courses_title': { ar: 'دوراتنا في الرياضيات', en: 'Our Mathematics Courses' },
+            'courses_subtitle': { ar: 'اختر الدورة التي تناسب احتياجاتك وابدأ رحلة التفوق في الرياضيات.', en: 'Choose the course that fits your needs and start your journey to excellence in math.' },
+            'course_1_title': { ar: 'الجبر والهندسة الفراغية', en: 'Algebra & Solid Geometry' },
+            'course_1_desc': { ar: 'شرح شامل لجميع فصول المنهج مع حل تمارين متنوعة وأسئلة امتحانات سابقة لضمان فهم عميق وتطبيق سليم.', en: 'Comprehensive explanation of all curriculum chapters with various exercises and past exam questions.' },
+            'course_2_title': { ar: 'التفاضل والتكامل', en: 'Calculus (Differentiation & Integration)' },
+            'course_2_desc': { ar: 'تبسيط مفاهيم التفاضل والتكامل وقواعد الاشتقاق والتطبيقات العملية عليها، مع التركيز على المسائل الصعبة.', en: 'Simplifying calculus concepts, derivation rules, and their practical applications, focusing on challenging problems.' },
+            'course_3_title': { ar: 'المراجعة النهائية وليلة الامتحان', en: 'Final Review & Exam Prep' },
+            'course_3_desc': { ar: 'دورة مكثفة تغطي أهم الأفكار والنقاط الرئيسية في المنهج بالكامل، مع حل نماذج امتحانات متوقعة.', en: 'An intensive course covering the most important ideas and key points of the entire curriculum, with solutions to expected exam models.' },
+            'contact_title': { ar: 'تواصل معنا', en: 'Contact Us' },
+            'contact_subtitle': { ar: 'لديك سؤال أو ترغب في الانضمام لإحدى دوراتنا؟ املأ النموذج وسنقوم بالرد عليك.', en: 'Have a question or want to join one of our courses? Fill out the form, and we will get back to you.' },
+            'form_name': { ar: 'الاسم الكامل', en: 'Full Name' }, 'form_email': { ar: 'البريد الإلكتروني', en: 'Email Address' }, 'form_message': { ar: 'رسالتك', en: 'Your Message' }, 'form_submit': { ar: 'إرسال الرسالة', en: 'Send Message' },
+            'footer_desc': { ar: 'مدرس رياضيات متخصص، ملتزم بتمكين الطلاب لتحقيق أعلى الدرجات.', en: 'Specialized math tutor committed to empowering students to achieve the highest grades.'},
+            'quick_links': { ar: 'روابط سريعة', en: 'Quick Links' }, 'contact_us_link': {ar: 'تواصل معنا الآن', en: 'Contact Us Now'}, 'rights_reserved': {ar: 'جميع الحقوق محفوظة.', en: 'All rights reserved.'}
+        };
+
+        const pageTitles = {
+            'index.html': { ar: 'أحمد سامي | مدرس رياضيات للثانوية العامة', en: 'Ahmed Samy | High School Math Tutor' },
+            'about.html': { ar: 'عن المدرس | أحمد سامي', en: 'About Me | Ahmed Samy' },
+            'videos.html': { ar: 'شروحات وآراء | أحمد سامي', en: 'Videos & Reviews | Ahmed Samy' },
+            'courses.html': { ar: 'الدورات | أحمد سامي', en: 'Courses | Ahmed Samy' },
+            'contact.html': { ar: 'تواصل معنا | أحمد سامي', en: 'Contact Us | Ahmed Samy' }
+        };
+
+        const setLanguage = (lang) => {
+            state.lang = lang;
+            localStorage.setItem('lang', lang);
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            if (pageTitles[currentPage] && pageTitles[currentPage][lang]) {
+                document.title = pageTitles[currentPage][lang];
+            }
+            
+            document.querySelectorAll('[data-lang-key]').forEach(el => {
+                const key = el.dataset.langKey;
+                if (translations[key] && translations[key][lang]) {
+                    el.innerHTML = translations[key][lang];
+                }
+            });
+            
+            const langSwitch = document.querySelector('#lang-switch');
+            if (langSwitch) {
+                langSwitch.textContent = lang === 'ar' ? 'EN' : 'عربي';
+            }
+        };
+
+        const setActiveLink = () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('a.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+            document.querySelectorAll('a.mobile-nav-link').forEach(link => {
+                link.classList.remove('bg-slate-200', 'font-bold');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('bg-slate-200', 'font-bold');
+                }
+            });
+        };
+
+        function initializeComponents() {
+            const langSwitch = document.querySelector('#lang-switch');
+            if (langSwitch) {
+                langSwitch.addEventListener('click', () => setLanguage(state.lang === 'ar' ? 'en' : 'ar'));
+            }
+
+            const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
+            const mobileMenu = document.querySelector('#mobile-menu');
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+            }
+
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('#main-header');
+                if (header) {
+                    window.scrollY > 50 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            const yearSpan = document.querySelector('#year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            setLanguage(state.lang);
+            setActiveLink();
+        }
+    </script>
+</body>
+</html>
